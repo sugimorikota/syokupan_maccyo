@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'images#top'
+  root 'staticpages#top'
   resources :images, only: [:index, :show] do
     get :random, on: :collection
   end
