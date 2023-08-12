@@ -1,6 +1,19 @@
-<h1 style="text-align: center;">あなたの運命の人</h1>
-<div style="text-align: center;">
-<%= image_tag @image.image %>
-<p><%= @image.title %></p>
-<p><%= @image.body %></p>
+<div class="d-flex flex-column align-items-center justify-content-center" style="height: 90vh;">
+  <h1 class="mb-4">あなたの運命の人</h1>
+
+  <%= image_tag @image.image %>
+
+  <div><%= @image.title %></div>
+  <div><%= @image.body %></div>
+
+  <!-- # Twitter共有ボタン -->
+  <%= link_to "https://twitter.com/share?url=#{request.url}&text=#{URI.encode_www_form_component("あなたの運命の人は#{@image.title}です！")}", title: 'Twitter', target: '_blank', class: 'btn btn-primary my-2' do %>
+    <i class="fab fa-twitter"></i> Twitterで共有
+  <% end %>
+
+  <!-- # Topページへボタン -->
+  <%= link_to root_path, class: 'btn btn-danger' do %>
+    <i class="fas fa-home"></i> トップページへ
+  <% end %>
+
 </div>

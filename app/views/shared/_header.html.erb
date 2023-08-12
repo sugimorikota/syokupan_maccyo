@@ -1,8 +1,18 @@
 <header>
-  <nav class="navbar navbar-expand-lg navigation navbar-light bg-primary"> 
+  <nav class="navbar navbar-expand-lg navigation navbar-light bg-primary py-0"> 
 
     <%= link_to root_path, class: 'navbar-brand' do %>
-      <%= image_tag 'breadgirl.png', size: '90x100' %>
+      <div class="navbar-text">
+        <%= image_tag 'breadgirl.png', size: '50x60' %>
+      </div>
+        
+      <div class="navbar-text text-white">
+        青春アプリ
+      </div>
+    
+      <div class="navbar-text">
+        <%= image_tag 'boy.png', size: '40x60' %>
+      </div>
     <% end %>
 
   </nav>
