@@ -7,7 +7,7 @@
   <div><%= @image.body %></div>
 
   <!-- # Twitter共有ボタン -->
-  <%= link_to "https://twitter.com/share?url=#{request.url}&text=#{URI.encode_www_form_component("あなたの運命の人は#{@image.title}です！")}", title: 'Twitter', target: '_blank', class: 'btn btn-primary my-2' do %>
+  <%= link_to "https://twitter.com/share?url=#{request.url}&text=#{URI.encode_www_form_component("あなたの運命のマッチョは#{@image.title}です！")}", title: 'Twitter', target: '_blank', class: 'btn btn-primary my-2' do %>
     <i class="fab fa-twitter"></i> Twitterで共有
   <% end %>
 
