@@ -1,3 +1,10 @@
 @import 'bootstrap';
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+.center-align {
+  text-align: center;
+}
+.small-text {
+  font-size: 50%; /* 適切なサイズに調整してください */
+}
